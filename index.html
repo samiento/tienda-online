@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document1</title>
+</head>
+
+<body>
+  <h1>Esta es una pagina de comercio</h1>
+
+  <form action="/contacto.html" method="post">
+    <!-- acá van los campos -->
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="ana@ejemplo.com">
+
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+
+    <label for="clave">Contraseña</label>
+    <input type="password" id="clave" name="clave">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea>
+
+    <label for="provincia">Provincia</label>
+    <select id="provincia" name="provincia">
+      <option value="">Elegí una provincia</option>
+      <option value="misiones">Misiones</option>
+      <option value="corrientes">Corrientes</option>
+      <option value="buenos-aires">Buenos Aires</option>
+    </select>
+
+    <p>Método de pago:</p>
+    <input type="radio" id="tarjeta" name="pago" value="tarjeta">
+    <label for="tarjeta">Tarjeta</label>
+
+    <input type="radio" id="transferencia" name="pago" value="transferencia">
+    <label for="transferencia">Transferencia</label>
+
+    <input type="checkbox" id="newsletter" name="newsletter" value="si">
+    <label for="newsletter">Quiero recibir ofertas por email</label>
+
+
+    <button type="submit">Enviar consulta</button>
+
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required minlength="3">
+
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+
+
+    <fieldset>
+      <legend>Datos de envío</legend>
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion" required>
+    </fieldset>
+  </form>
+
+
+  <a href="contacto.html">ir a contactos</a>
+</body>
+
+</html>
