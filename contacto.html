@@ -8,8 +8,21 @@
   <title>contacto</title>
 </head>
 
-<body>
+<header>
+  <h1>Tienda Virtual</h1>
   <h1>Contacto</h1>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="producto.html">Productos</a></li>
+    <li><a href="checkout.html">Checkout</a></li>
+    
+  </ul>
+</header>
+
+<body>
+  
+  <fieldset>
+      <legend>Consultas</legend>
   <p>¿Tenés una consulta? Escribinos y te respondemos en 24 horas.</p>
 
   <form action="#" method="post">
@@ -30,6 +43,44 @@
     <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
     <button type="submit">Enviar consulta</button>
+  </fieldset>
+  </form>
+
+  
+  <form action="/contacto.html" method="post">
+    <fieldset>
+      <legend>Datos Personales</legend>
+    <!-- acá van los campos -->
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="ana@ejemplo.com">
+
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+
+    <label for="clave">Contraseña</label>
+    <input type="password" id="clave" name="clave">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea>
+    <button type="submit">Enviar consulta</button>
+    </fieldset>
+
+    <label for="provincia">Provincia</label>
+    <select id="provincia" name="provincia">
+      <option value="">Elegí una provincia</option>
+      <option value="misiones">Misiones</option>
+      <option value="corrientes">Corrientes</option>
+      <option value="buenos-aires">Buenos Aires</option>
+    </select>
+
+    <fieldset>
+      <legend>Datos de envío</legend>
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion" required>
+    </fieldset>
   </form>
 
   <a href="index.html">Volver al inicio</a>
@@ -40,7 +91,6 @@
       <p>&copy; 2026 Tienda Virtual. Cba. Rio IV.</p>
       <a href="mailto:hola@tiendavirtual.com">hola@tiendavirtual.com</a>
     </footer>
-
 
 </body>
 

@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 30px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(217, 204, 231);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     background-color: rgb(159, 89, 224);
     font-size: 24px;
     color: aquamarine;
-    border: 5px solid rgb(231, 50, 37);
+    border: 5px solid rgb(32, 27, 27);
     line-height: 2.5;
     text-align: left;
 }
