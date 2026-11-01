@@ -5,9 +5,37 @@
 }
 
 h1 {
-    background-color: blueviolet;
+    background-color: rgb(159, 89, 224);
     font-size: 24px;
     color: aquamarine;
-    border: 5px solid green;
+    border: 5px solid rgb(231, 50, 37);
+    line-height: 2.5;
+    text-align: left;
+}
 
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 217, 239);
+    gap: 20px;
+}
+
+h2{
+    background-color: rgb(159, 89, 224);
+    font-size: 24px;
+    color: aquamarine;
+    line-height: 2.5;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(159, 89, 224);
+    color: aquamarine;
+    text-align: center;
+    padding: 20px;
 }
