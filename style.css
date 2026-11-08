@@ -9,13 +9,14 @@ body {
     padding: 20px;
     font-family: Arial, sans-serif;
     background-color: rgb(225, 82, 75);
+    gap: 1rem;
 }
 
 .barra {
     display: flex;
     flex-direction: column;
     background-color: aqua;
-    border: 5px solid blueviolet;
+    border: 5px solid rgb(24, 24, 28);
     gap: 5rem;
 }
 
