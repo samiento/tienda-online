@@ -8,7 +8,7 @@ body {
     margin: 30px;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: rgb(225, 82, 75);
+    background-color: rgb(237, 73, 64);
     gap: 1rem;
 }
 
@@ -37,6 +37,21 @@ body {
     text-decoration: none;
 }
 
+.detalle3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* dos columnas iguales */
+    gap: 2rem;
+    align-items: start;
+}
+
+.detalle2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* dos columnas iguales */
+    gap: 2rem;
+    align-items: start;
+}
 
 .detalle {
     display: grid;
@@ -54,16 +69,24 @@ img {
 .menu2 {
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-start;
     justify-content: row;
     gap: 2.5rem;
     color: chartreuse;
     background-color: coral;
     text-decoration: none;
-    text-align: center;
+    
 }
 
 h2 {
+    background-color: rgb(159, 89, 224);
+    font-size: 24px;
+    color: aquamarine;
+    line-height: 2.5;
+    text-align: center;
+}
+
+h3 {
     background-color: rgb(159, 89, 224);
     font-size: 24px;
     color: aquamarine;
