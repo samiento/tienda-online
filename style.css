@@ -8,7 +8,7 @@ body {
     margin: 30px;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: rgb(126, 228, 108);
+    background-color: rgb(103, 208, 234);
     gap: 2rem;
 }
 
@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: aqua;
-    border: 5px solid rgb(24, 24, 28);
+    border: 5px solid rgb(68, 68, 83);
     border-radius: 10px;
     gap: 5rem;
 }
@@ -27,14 +27,17 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(230, 100, 100)
 }
 
 .menu {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: column;
+    color: rgb(220, 50, 50);
     text-decoration: none;
 }
 
@@ -65,16 +68,18 @@ body {
     gap: 2rem;
     align-items: start;
     border-radius: 10px;
-    border: 3px solid red;
+    border: 3px solid rgb(213, 58, 58);
 }
 
 img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 10px;
 }
 
 .menu2 {
+    list-style-type: none;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -84,9 +89,9 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif 'Arial Narrow', Arial, sans-serif Georgia, Times, 'Times New Roman', serif;
 
     color: rgb(23, 27, 20);
-    background-color: rgb(211, 228, 87);
+    background-color: rgb(225, 225, 40);
     border-radius: 10px;
-    border: 3px solid red;
+    border: 3px solid rgb(21, 20, 20);
 }
 
 .caracter {
@@ -95,17 +100,17 @@ img {
     text-decoration: none;
     border: 3px solid black;
     text-align: center;
-    
+
 }
 
 h2 {
-    background-color: rgb(159, 89, 224);
+    background-color: rgb(183, 63, 234);
     font-size: 24px;
     color: aquamarine;
     line-height: 2.5;
     text-align: center;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid rgb(20, 20, 18);
 }
 
 h3 {
@@ -120,23 +125,66 @@ h3 {
 
 p {
     text-align: center;
-    color: rgb(44, 56, 56);
+    color: rgb(246, 238, 237);
+
+
+}
+
+.duti {
+    text-align: center;
+    color: rgb(35, 48, 48);
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 footer {
     background-color: rgb(159, 89, 224);
-    color: aquamarine;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
+    border: 3px solid black;
+}
+
+a {
+    color: rgb(20, 19, 18);
 }
 
 .contacto {
-    color: aliceblue;
+
     gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+
+    header,
+    main,
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .detalle {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .producto.destacado {
+        grid-column: span 2;
+    }
+
+    .hero {
+        padding: 6rem 1rem;
+    }
 }
