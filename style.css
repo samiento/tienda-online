@@ -41,7 +41,7 @@ body {
     justify-content: column;
     color: rgb(212, 37, 37);
     text-decoration: none;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
 .menu1 a {
@@ -49,12 +49,12 @@ body {
     text-decoration: none;
 }
 
-.menu1 a:hover{
-    color:rgb(168, 16, 16);
+.menu1 a:hover {
+    color: rgb(168, 16, 16);
 }
 
 
- 
+
 /*----------primera parte--------*/
 
 .duti {
@@ -111,19 +111,22 @@ img {
     box-shadow: 10px;
 }
 
+/*-----------Marquesina----------*/
 .menu2 {
     list-style-type: none;
     margin: 10px;
+    width: 560px;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: column;
-    gap: 0.5rem;
+    gap: 4rem;
     font-family: initial;
-    color: rgb(199, 92, 11);
+    color: rgb(171, 23, 23);
     background-color: rgb(84, 240, 56);
-    border-radius: 10px;
-    border: 3px solid rgb(21, 20, 20);
+
+
 }
 
 h2 {
@@ -182,13 +185,13 @@ h4 {
     align-items: flex-end;
 }
 
-.rotatediv1{
+.rotatediv1 {
     transform: rotate(-35deg);
 }
 
 /*------PRODUCTOS-------*/
 
-.ropa1{
+.ropa1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* dos columnas iguales */
@@ -197,7 +200,8 @@ h4 {
     border-radius: 10px;
     border: 3px solid rgb(108, 225, 61);
 }
-.ropa{
+
+.ropa {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -206,7 +210,7 @@ h4 {
 
 .unit {
     color: chartreuse;
-    background-color:dodgerblue;
+    background-color: dodgerblue;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -223,7 +227,7 @@ h4 {
 }
 
 .caracter {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
     background-color: rgb(57, 238, 72);
     color: rgb(219, 42, 11);
@@ -233,7 +237,7 @@ h4 {
     text-align: center;
 }
 
-figcaption{
+figcaption {
     width: 60px;
     padding: 10px;
     color: red;
@@ -248,11 +252,11 @@ figcaption{
 
 /*---------contacto---------*/
 
-fieldset{
-    background-color:aqua
+fieldset {
+    background-color: aqua
 }
 
-.mapa{
+.mapa {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* dos columnas iguales */
@@ -262,6 +266,38 @@ fieldset{
     border: 3px solid rgb(108, 225, 61);
 }
 
+.menu4 {
+    list-style-type: none;
+    margin: 10px;
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: column;
+    gap: 4rem;
+    font-family: initial;
+    color: rgb(171, 23, 23);
+    background-color: rgb(234, 234, 29);
+}
+ /*----------CHECKOUT-----------*/
+
+ .menu3 {
+    list-style-type: none;
+    margin: 10px;
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: column;
+    gap: 4rem;
+    font-family: initial;
+    color: rgb(171, 23, 23);
+    background-color: rgb(225, 240, 56);
+
+
+}
 
 
 /*-----------FOOTER-----------*/
