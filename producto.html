@@ -14,9 +14,9 @@
 <body>
   <header>
     <div class="barra">
-      <nav>
-        <h1 class="logo">Productos</h1>
-        <ul class="menu">
+      <h1 class="logo">Productos</h1>
+      <nav class="nav">
+        <ul class="menu1">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="producto.html">Productos</a></li>
           <li><a href="contacto.html">Contacto</a></li>
@@ -30,9 +30,10 @@
     <article>
       <div class="ropa1">
         <figure>
-          <img class="ropa" src="IMG/istockphoto-2208288816-1024x1024.jpg"
-            alt="Remera básica de algodón blanca">
-          <figcaption>CASH</figcaption>
+          <img class="ropa" src="IMG/istockphoto-2208288816-1024x1024.jpg" alt="Remera básica de algodón blanca">
+          <div class="rotatediv1">
+            <figcaption>CASH</figcaption>
+          </div>
         </figure>
 
         <h2>Remera Básica de Algodón: $12.500</h2>
@@ -45,31 +46,29 @@
           <li>Lavable a máquina</li>
           <li>Disponible en 3 colores</li>
         </ul>
+
+
+        <form action="#" method="post">
+          <label for="talle">Talle</label>
+          <select id="talle" name="talle" required>
+            <option value="">Elegí un talle</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+          </select>
+
+          <label for="cantidad">Cantidad</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
       </div>
 
-      <form action="#" method="post">
-        <label for="talle">Talle</label>
-        <select id="talle" name="talle" required>
-          <option value="">Elegí un talle</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-        </select>
-
-        <label for="cantidad">Cantidad</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
-
-        <button type="submit">Agregar al carrito</button>
+      <button type="submit">Agregar al carrito</button>
       </form>
     </article>
   </main>
 
-  <a href="index.html"></a>
-  <a href="contacto.html"></a>
-  <a href="index.html"></a>
-
   <footer>
     <p>&copy; 2026 Tienda Virtual. Cba. Rio IV.</p>
+    <a href="mailto:hola@tiendavirtual.com">hola@tiendavirtual.com</a>
   </footer>
 </body>
 
