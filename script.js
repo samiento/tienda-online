@@ -1,43 +1,19 @@
-//const precio = 100;
-//const cantidad = 3;
-//const subtotal = precio * cantidad;
-//const iva = subtotal * 0.21;
-//const total = subtotal + iva
+const IVA = 0.21;
 
-//console.log(total);
+const conIva = (precio) => precio * (1 + IVA);
 
-//let stock = 10;
+const productos = [
+  { id: 1, nombre: "Zapatillas Urbanas", precio: 25000, stock: 8, categoria: "Calzado" },
+  { id: 2, nombre: "Remera Básica", precio: 9000, stock: 20, categoria: "Ropa" },
+  { id: 3, nombre: "Mochila", precio: 18000, stock: 0, categoria: "Accesorios" },
+  { id: 4, nombre: "Gorra", precio: 6500, stock: 15, categoria: "Accesorios" },
+];
 
-//const valor = stock > 5 ? "disponible" : "agotado";
-//console.log(valor);
+const disponibles = productos.filter((p) => p.stock > 0);
 
+disponibles.forEach((p) => {
+  console.log(`${p.nombre} - $${conIva(p.precio)} (stock: ${p.stock})`);
+});
 
-const precio = 25000;
-const compro = 3;
-const stock = 5;
-const cupon = "VERANO";
-let descuento = 0.9;
-let cuponaso = 2000;
-
-if (compro > stock) {
-  console.log("No hay stock suficiente");
-} else {
-  let subtotal = precio * compro;
-
-  // Descuento por cantidad
-  if (compro >= 3) {
-    subtotal = subtotal * descuento;
-  }
-
-  // Cupón
-  if (cupon === "VERANO") {
-    subtotal = subtotal - cuponaso;
-  }
-
-  const envio = subtotal >= 50000 ? 0 : 3500; //envio gratis o le cobro
-  const total = subtotal + envio;
-
-  console.log(`Subtotal: $${subtotal}`);
-  console.log(`Envío: ${envio === 0 ? "gratis" : "$" + envio}`);
-  console.log(`Total: $${total}`);
-}
+const accesorios = productos.filter((p) => p.categoria === "Accesorios");
+console.log("Accesorios:", accesorios.map((p) => p.nombre));
